@@ -6,8 +6,7 @@
 BEGIN TRY
     BEGIN TRANSACTION;
     
-    DELETE FROM [dbo].[CLIENTE]
-    WHERE [ID] = 1;
+    DELETE FROM [dbo].[CLIENTE];
     
     COMMIT TRANSACTION;
     PRINT 'Delete executado com sucesso';
